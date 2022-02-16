@@ -21,29 +21,38 @@
 <body>
 
 <div class="container">
-  <div class="container__details">
-    <h1>Simple, traffic-based pricing</h1>
-      <p>Sign-up for our 30-day trial.</p>
-      <p>No credit card required.</p> 
+  <div class="details">
+    <h1 class="heading">Simple, traffic-based pricing</h1>
+      <p class="small" >Sign-up for our 30-day trial.</p>
+      <p class="small">No credit card required.</p> 
   </div>
   
   <div class = "card">
-    <h5>100k Pageviews</h5>
+    <h5 class="small">100k Pageviews</h5>
+
+  <div class="slider">
+    <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+  </div>
   
-    <h3>$16.00</h3> <p>/month</p>
+    <h3 class="price">$16.00</h3> <p clas="small">/month</p>
   
-   <p>Monthly Billing</p>
-    <h6>Yearly Billing</h6> <p>25% discount</p>
+   <p class="smallerText">Monthly Billing</p>
+    <p class="smallerText">Yearly Billing</p> 
+    <p class="smallTextRedcolor">25% discount</p>
+   
+  </div>
   
-  <ul>
+  <div class="offers">
+    <ul class="small">
   
-    <li>Unlimited websites</li>
-    <li>100% data ownership</li>
-    <li>Email reports</li>
-  </ul>
-  
-    <p>Start my trial</p>
-  </div> 
+      <li class="tick">Unlimited websites</li>
+      <li class="tick">100% data ownership</li>
+      <li class="tick">Email reports</li>
+    </ul>
+    
+    <button class="button">Start my trial</button>
+    
+  </div>
 
 </div>
 
