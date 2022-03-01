@@ -22,37 +22,68 @@
 
 <div class="container">
   <div class="details">
-    <h1 class="heading">Simple, traffic-based pricing</h1>
-      <p class="small" >Sign-up for our 30-day trial.</p>
-      <p class="small">No credit card required.</p> 
+    <div class="heading">Simple, traffic-based pricing</div>
+    <div class="detail-flex">
+      <div class="flex-detall" >Sign-up for our 30-day trial.</div>
+      <div class="flex-detail">No credit card required.</div> 
+    </div>
   </div>
   
   <div class = "card">
-    <h5 class="small">100k Pageviews</h5>
+    <div data-page class="pageviews">100k Pageviews</div>
 
-  <div class="slider">
-    <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+   <div class="slider-container">
+    <input type="range" min="0" max="100" value="50" step="25" class="slider" id="slide">
+   </div>
+
+   <div class="slider-output">
+    <div data-price class="slider-price">$16</div>
+    <div data-plan class="slider-plan">/ month</div>
+  </div>
+
+  
+  <div class="plans">
+    <div class="smallerText">Monthly Billing</div>
+
+    <div class="price-button">
+      <input type="checkbox" class="checkbox" id="checkbox">
+      <label for="checkbox" class="label" id="label">
+      <div class="ball"></div>
+    </label> 
+      </div>    
+    <div class="smallerText">Yearly Billing <span class="discount">25% discount</span></div>
+  </div>
+
+  
   </div>
   
-    <h3 class="price">$16.00</h3> <p clas="small">/month</p>
-  
-   <p class="smallerText">Monthly Billing</p>
-    <p class="smallerText">Yearly Billing</p> 
-    <p class="smallTextRedcolor">25% discount</p>
-   
-  </div>
-  
+  <!-- Beginning of offer section -->
+
   <div class="offers">
-    <ul class="small">
-  
-      <li class="tick">Unlimited websites</li>
-      <li class="tick">100% data ownership</li>
-      <li class="tick">Email reports</li>
-    </ul>
+    <div class ="offers-info"> 
     
-    <button class="button">Start my trial</button>
-    
+      <div class="offers-flex">
+        <img src="./images/icon-check.svg" alt="check-icon" class="tick">
+        <div class="tick">Unlimited websites</div>
+      </div>
+
+      <div class="offers-flex">
+        <img src="./images/icon-check.svg" alt="check-icon" class="tick">
+        <div class="tick">100% data ownership</div>
+      </div>
+
+      <div class="offers-flex">
+        <img src="./images/icon-check.svg" alt="check-icon" class="tick">
+        <div class="tick">Email reports</div>
+      </div>
+     </div>
   </div>
+    
+  <div class="trial-btn">
+    <button class="start-btn">Start my trial</button>
+  </div>
+    
+</div>
 
 </div>
 
