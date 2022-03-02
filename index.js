@@ -1,13 +1,13 @@
-const price = document.querySelector('[data-price');
+const price = document.querySelector('[data-price]');
 const slider = document.getElementById('slide');
 const checkbox = document.getElementById('checkbox');
-const pageViews = document.querySelector('[data-page]');
+const pageViews  = document.querySelector('[data-page]');
 const plan = document.querySelector('[data-plan]');
 
-let priceChoice=16;
+let priceChoice = 16;
 
-slider.oninput=function(){
-    price.innerHTML=this.value;
+slider.oninput = function(){
+    price.innerHTML = this.value;
     switch(+price.innerHTML){
 
         case 0:
@@ -62,14 +62,11 @@ slider.addEventListener("mousemove", function(){
 const priceDiscount = function(discount){
     if(checkbox.checked){
         discount = (discount - (discount * .25)) * 12; 
-        plans.innerHTML = '/ year';
+        plan.innerHTML = '/ year';
     }
     else{
-        plans.innerHTML = '/ month';
+        plan.innerHTML = '/ month';
     }
 
     return discount.toFixed(2);
-}
-
-    }
 }
